@@ -17,7 +17,7 @@
 			<script>
 				function button1_click() {
 					var input = document.getElementById('input').value;
-					if(input == "400"){
+					if(input == 400){
 						alert('맞았습니다 똑똑하시네요');
 						window.location.href = "LV3.html";
 				
@@ -27,10 +27,10 @@
 					}
 				}
 				function button2_click() {
-					var result = confirm("힌트를 정말 보시겠습니까? 힌트를 보시면 140초의 제한시간이 주어집니다");
+					var result = confirm("힌트를 정말 보시겠습니까? 힌트를 보시면 110초의 제한시간이 주어집니다");
 					if(result){
 						alert('한바퀴도는데 걸리는 시간 (의외로 쉬움 ㅋ)');
-						setTimeout("ozit_timer_test()", 140);
+						setTimeout(ozit_timer_test(), 110);
 					}
 					function ozit_timer_test(){
 						alert('실패');
