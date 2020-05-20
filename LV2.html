@@ -25,23 +25,22 @@
 						alert("틀렸습니다");
 					}
 				}
-        <button id="button1" onclick="button1_click();">정답입력</button>
 			</script>
-        <button id="button2" onclick="button2_click();">힌트보기</button>
+        		<button id="button2" onclick="button2_click();">힌트보기</button>
 			<script>
 				function button2_click() {
-          var result = confirm("힌트를 정말 보시겠습니까? 힌트를 보시면 140초의 제한시간이 주어집니다");
-				  if(result){
-            alert('한바퀴도는데 걸리는 시간 (의외로 쉬움 ㅋ)');
-            setTimeout("ozit_timer_test()", 140);
-          }
-          function ozit_timer_test(){
-            alert('실패');
-            window.location.href = "LV1.html";
-          }
+          				var result = confirm("힌트를 정말 보시겠습니까? 힌트를 보시면 140초의 제한시간이 주어집니다");
+				  	if(result){
+            					alert('한바퀴도는데 걸리는 시간 (의외로 쉬움 ㅋ)');
+            					setTimeout("ozit_timer_test()", 140);
+          				}
+          				function ozit_timer_test(){
+            					alert('실패');
+            					window.location.href = "LV1.html";
+          				}
 				}
-        <button id="button1" onclick="button1_click();">힌트보기</button>
-      </script>
+        
+      			</script>
 		</div>
 	</body>
 </html>
