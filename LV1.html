@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>LV-1수학문제</title>
+		<link rel = "stylesheet" href = "ee.css">
+	</head>
+	<body>
+		<h1>첫번째 문제입니다 이번문제를 맞추게 되면 두번째문제를 맞출수있게됩니다</h1>
+		<h2> type정보: 삼각비, 공간도형 </h2>
+		<div id = "b">
+			<p> 어느 유리판이 있습니다 </p>
+			<p> 유리판을 x축을 기준으로 60도 돌렸을때 유리판의 꼭지점에서 zx축에내린 수선의 발을 </p>
+			<p> 모두 연결해 만든 도형은 넓이가 몇입니까? 단, 유리판의 넓이는 S라고한다 </p>
+			<button id="button1" onclick="button1_click();">정답입력</button>
+			<script>
+				function button1_click() {
+					var input = prompt('정답입력');
+					var str = "0.5S";
+					if(input == str){
+						alert('맞았습니다 똑똑하시네요');
+						window.location.href = "LV2.html";
+				
+					}
+					else{
+						alert("틀렸습니다");
+					}
+				}
+			</script>
+
+
+		</div>
+	</body>
+</html>
