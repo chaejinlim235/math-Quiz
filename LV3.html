@@ -2,4 +2,14 @@
   <link rel = "stylesheet" href = "style2.css">
   <title>수학문제 LV-3</title>
   <h1> 제작중... </h1>
+  <button id="button2" onclick="button2_click();">뒤로가기</button>
+  <script>
+    function button2_click(){
+      var input = confirm('뒤로가시겠습니까? 아니요를 입력하시면 새창을 엽니다');
+      if(input){
+        window.location.href = "LV2.html";
+      }
+      else window.location.href = "www.google.com";
+    }
+  </script>
 </html>
