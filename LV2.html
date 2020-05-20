@@ -1,1 +1,47 @@
-dfaffadgg
+  
+<html>
+	<head>
+		<title>LV-1수학문제</title>
+		<link rel = "stylesheet" href = "ee.css">
+	</head>
+	<body>
+		<h1>두번째 문제입니다 이번문제를 맞추게 되면 세번째문제를 맞출수있게됩니다</h1>
+		<h2> type정보: 접선 </h2>
+		<div id = "b">
+			<p> 어느 실의길이 40cm 투포환 던지기 선수가 있습니다 </p>
+			<p> 각속도 파이/10rad/s으로 투포환을 n초동안 돌릴때 </p>
+			<p>돌리기전 서있던 방향으로 날아가려면 최소 몇초동안 돌려야합니까?</p>
+			<button id="button1" onclick="button1_click();">정답입력</button>
+			<script>
+				function button1_click() {
+					var input = prompt('정답입력');
+					var str = 400;
+					if(input == str){
+						alert('맞았습니다 똑똑하시네요');
+						window.location.href = "LV3.html";
+				
+					}
+					else{
+						alert("틀렸습니다");
+					}
+				}
+        <button id="button1" onclick="button1_click();">정답입력</button>
+			</script>
+        <button id="button2" onclick="button2_click();">힌트보기</button>
+			<script>
+				function button2_click() {
+          var result = confirm("힌트를 정말 보시겠습니까? 힌트를 보시면 140초의 제한시간이 주어집니다");
+				  if(result){
+            alert('한바퀴도는데 걸리는 시간 (의외로 쉬움 ㅋ)');
+            setTimeout("ozit_timer_test()", 140);
+          }
+          function ozit_timer_test(){
+            alert('실패');
+            window.location.href = "LV1.html";
+          }
+				}
+        <button id="button1" onclick="button1_click();">힌트보기</button>
+      </script>
+		</div>
+	</body>
+</html>
